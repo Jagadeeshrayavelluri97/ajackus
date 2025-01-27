@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* UserList Styles */
+.user-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow-x: auto; /* Enable horizontal scrolling for long tables */
+}
+
+.user-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.user-list-header span {
+  flex: 1;
+  text-align: center;
+}
+
+.user-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd; /* Add right border */
+}
+
+.user-list-item:last-child {
+  border-bottom: none;
+}
+
+.user-list-item span {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #ddd; /* Add right border */
+}
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.edit-button {
+  background-color: #3399ff;
+  color: white;
+}
+
+.delete-button {
+  background-color: #ff3333;
+  color: white;
+}
+
+/* UserForm Styles */
+.user-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.add-user-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3399ff;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* UserEditModal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Set max-width for responsiveness */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee; /* Add a thin border */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.save-button {
+  background-color: #3399ff;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #ddd;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Adjust modal width for smaller screens */
+  .modal-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .user-list-header span {
+    font-size: 0.8rem;
+  }
+
+  .user-list-item span {
+    font-size: 0.8rem;
+  }
+}
