@@ -1,4 +1,4 @@
-/* Global Styles */
+/* changes */
 body {
   font-family: sans-serif;
   margin: 0;
@@ -11,14 +11,14 @@ body {
   padding: 20px;
 }
 
-/* UserList Styles */
+
 .user-list {
   display: flex;
   flex-direction: column;
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
-  overflow-x: auto; /* Enable horizontal scrolling for long tables */
+  overflow-x: auto; 
 }
 
 .user-list-header {
@@ -41,7 +41,7 @@ body {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd; /* Add right border */
+  border-right: 1px solid #ddd; 
 }
 
 .user-list-item:last-child {
@@ -51,7 +51,7 @@ body {
 .user-list-item span {
   flex: 1;
   text-align: center;
-  border-right: 1px solid #ddd; /* Add right border */
+  border-right: 1px solid #ddd; 
 }
 .edit-button,
 .delete-button {
@@ -72,7 +72,7 @@ body {
   color: white;
 }
 
-/* UserForm Styles */
+
 .user-form {
   display: flex;
   flex-direction: column;
@@ -104,7 +104,7 @@ body {
   margin-top: 10px;
 }
 
-/* UserEditModal Styles */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -123,12 +123,12 @@ body {
   padding: 30px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Set max-width for responsiveness */
+  max-width: 400px; 
 }
 
 .form-group {
   margin-bottom: 15px;
-  border-bottom: 1px solid #eee; /* Add a thin border */
+  border-bottom: 1px solid #eee; 
 }
 
 .form-group label {
@@ -166,9 +166,9 @@ body {
   background-color: #ddd;
 }
 
-/* Responsive Styles */
+
 @media screen and (max-width: 768px) {
-  /* Adjust modal width for smaller screens */
+  
   .modal-content {
     width: 90%;
   }
